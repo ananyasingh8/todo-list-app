@@ -2,6 +2,13 @@ const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 let tasks = [];
 
+const event = new KeyboardEvent('keydown', {
+  key: 'Enter',
+  code: 'Enter',
+  which: 13,
+  keyCode: 13,
+});
+
 function addTask() {
   if (inputBox.value === "") {
     alert("You must write something!");
@@ -29,6 +36,12 @@ function renderTask(task) {
   span.innerHTML = "\u00d7";
   li.appendChild(span);
 }
+
+inputBox.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") { 
+    addTask(); 
+  }
+});
 
 listContainer.addEventListener(
   "click",
@@ -64,3 +77,5 @@ function showTask() {
 }
 
 showTask();
+
+
