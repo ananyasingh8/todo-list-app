@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifx, sans-serif;
     box-sizing: border-box;
 }
 
@@ -15,10 +15,12 @@
 .todo-app
 {
     width: 100%;
-    max-width: 540px;
+    max-width: 560px;
     background: #fff8f8;
     margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    padding: 50px 30px 40px;
+    max-height: 700px;
+    height: 500px;
     border-radius: 10px;
 }
 
@@ -40,7 +42,7 @@
     align-items: centre;
     justify-content: space-between;
     background: #edeef0;
-    border-radius: 30px;
+    border-radius: 20px;
     padding-left: 20px;
     margin-bottom: 25px;
 }
@@ -62,7 +64,7 @@ button
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 button:hover
